@@ -37,7 +37,7 @@ jobs:
         if: success()
         run: |
           az webapp create -g ${{ env.AZURE_RESOURCE_GROUP }} -p ${{ env.AZURE_APP_PLAN }} -n ${{ env.AZURE_WEBAPP_NAME }} --runtime "NODE:14-lts" --subscription ${{secrets.AZURE_SUBSCRIPTION_ID}}
-#Comment
+#Comment1
   destroy-azure-resources:
     runs-on: ubuntu-latest
 
